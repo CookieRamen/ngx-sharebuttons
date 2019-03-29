@@ -1037,7 +1037,7 @@ export class CopyButton extends ShareButtonBase {
         this._document.body.removeChild(textArea);
         this._disableButton();
       } catch (e) {
-        console.warn(&#x27;Copy link failed!&#x27;, e.message);
+        console.warn(&#x27;コピーに失敗しました&#x27;, e.message);
       } finally {
         setTimeout(() &#x3D;&gt; this._resetButton(), 2000);
         resolve();
