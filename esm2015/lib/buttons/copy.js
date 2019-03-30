@@ -84,7 +84,7 @@ export class CopyButton extends ShareButtonBase {
                 this._disableButton();
             }
             catch (e) {
-                console.warn('Copy link failed!', e.message);
+                console.warn('コピー失敗', e.message);
             }
             finally {
                 setTimeout(() => this._resetButton(), 2000);

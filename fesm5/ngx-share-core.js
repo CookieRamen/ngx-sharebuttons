@@ -969,7 +969,7 @@ var CopyButton = /** @class */ (function (_super) {
                 _this._disableButton();
             }
             catch (e) {
-                console.warn('Copy link failed!', e.message);
+                console.warn('コピー失敗', e.message);
             }
             finally {
                 setTimeout(function () { return _this._resetButton(); }, 2000);
@@ -1155,7 +1155,7 @@ var SHARE_BUTTONS = {
     },
     line: {
         create: function (a, b, c, d, e, f, g, h) { return new LineButton(a, b, c, d, e, f, g, h); },
-        text: 'Line',
+        text: 'LINE',
         icon: ['fab', 'line'],
         color: '#00b900',
         ariaLabel: 'Share on Line'
@@ -1176,19 +1176,19 @@ var SHARE_BUTTONS = {
     },
     print: {
         create: function (a, b, c, d, e, f, g, h) { return new PrintButton(a, b, c, d, e, f, g, h); },
-        text: 'Print',
+        text: '印刷',
         icon: 'print',
         color: '#765AA2',
         ariaLabel: 'Print page'
     },
     copy: {
         create: function (a, b, c, d, e, f, g, h) { return new CopyButton(a, b, c, d, e, f, g, h); },
-        text: 'Copy link',
+        text: 'リンクをコピー',
         icon: 'link',
         color: '#607D8B',
         ariaLabel: 'Copy link',
         extra: {
-            successLabel: 'Copied',
+            successLabel: 'コピーしました',
             successIcon: 'check'
         }
     },

@@ -902,7 +902,7 @@ class CopyButton extends ShareButtonBase {
                 this._disableButton();
             }
             catch (e) {
-                console.warn('Copy link failed!', e.message);
+                console.warn('コピー失敗', e.message);
             }
             finally {
                 setTimeout(() => this._resetButton(), 2000);
@@ -1093,7 +1093,7 @@ const SHARE_BUTTONS = {
     },
     line: {
         create: (a, b, c, d, e, f, g, h) => new LineButton(a, b, c, d, e, f, g, h),
-        text: 'Line',
+        text: 'LINE',
         icon: ['fab', 'line'],
         color: '#00b900',
         ariaLabel: 'Share on Line'
@@ -1114,19 +1114,19 @@ const SHARE_BUTTONS = {
     },
     print: {
         create: (a, b, c, d, e, f, g, h) => new PrintButton(a, b, c, d, e, f, g, h),
-        text: 'Print',
+        text: '印刷',
         icon: 'print',
         color: '#765AA2',
         ariaLabel: 'Print page'
     },
     copy: {
         create: (a, b, c, d, e, f, g, h) => new CopyButton(a, b, c, d, e, f, g, h),
-        text: 'Copy link',
+        text: 'リンクをコピー',
         icon: 'link',
         color: '#607D8B',
         ariaLabel: 'Copy link',
         extra: {
-            successLabel: 'Copied',
+            successLabel: 'コピーしました',
             successIcon: 'check'
         }
     },

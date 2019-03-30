@@ -97,7 +97,7 @@ var CopyButton = /** @class */ (function (_super) {
                 _this._disableButton();
             }
             catch (e) {
-                console.warn('Copy link failed!', e.message);
+                console.warn('コピー失敗', e.message);
             }
             finally {
                 setTimeout(function () { return _this._resetButton(); }, 2000);
