@@ -82,5 +82,5 @@
   },
   "sideEffects": false,
   "typings": "ngx-share-core.d.ts",
-  "version": "7.1.2"
+  "version": "7.1.3"
 }
